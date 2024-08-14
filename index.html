@@ -4,56 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripAdvisor</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/76b282027d.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="" alt="logo" srcset="" />
+        <a href="index.html">
+          <img
+            src="./assets/images/Tripadvisor_logo.svg"
+            alt="logo"
+            srcset=""
+          />
+        </a>
         <nav>
-          <ul>
-            <li>
-              <a href=""><i class="fa-solid fa-pen">Avis</i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-heart">Voyages</i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-bell">Alertes</i></a>
-            </li>
-            <li><button>Connectez-vous</button></li>
-            <li><a href="">Panier</a></li>
-          </ul>
+          <div class="icons-nav">
+            <i class="fa-solid fa-pen"></i>
+            <p>Avis</p>
+          </div>
+          <div class="icons-nav">
+            <i class="fa-regular fa-heart"></i>
+            <p>Voyages</p>
+          </div>
+          <div class="icons-nav">
+            <i class="fa-regular fa-bell"></i>
+            <p>Alertes</p>
+          </div>
+          <button>Connectez-vous</button>
+          <div class="icons-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Panier</p>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Explorez Paris</h1>
+      <section class="container">
+        <h1><span>Explorez</span> Paris</h1>
         <p>
           Les revenus influencent le choix des expériences présentées sur cette
           page : <a href="">en savoir plus.</a>
         </p>
-        <nav>
-          <ul>
-            <li><button>Hôtels</button></li>
-            <li><button>Locations de vacances</button></li>
-            <li><button>Activités</button></li>
-            <li><button>Restaurants</button></li>
-            <li><button>Forums de voyage</button></li>
-            <li><button>Plus</button></li>
-          </ul>
+        <nav class="nav-top-pictures">
+          <div>
+            <p>Hôtels</p>
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div>
+            <p>Locations de vacances</p>
+            <i class="fa-solid fa-person-shelter"></i>
+          </div>
+          <div>
+            <p>Activités</p>
+            <i class="fa-solid fa-dice"></i>
+          </div>
+          <div>
+            <p>Restaurants</p>
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <p>Forums de voyage</p>
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <div>
+            <p>Vols</p>
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <div>
+            <p>Plus</p>
+            <i>...</i>
+          </div>
         </nav>
-        <img src="" alt="" srcset="" /><img src="" alt="" srcset="" /><img
-          src=""
-          alt=""
-          srcset=""
-        />
+        <div class="views">
+          <img src="./assets/images/view.jpg" alt="Paris" srcset="" />
+          <div>
+            <img
+              src="./assets/images/caption-8.jpg"
+              alt="Paris"
+              srcset=""
+            /><img src="./assets/images/caption-9.jpg" alt="Paris" srcset="" />
+          </div>
+        </div>
+        <div class="legend-pics">
+          <p>Europe > France > Île-de-France > Paris</p>
+          <p>Visiter: Paris</p>
+        </div>
+      </section>
+      <section class="container">
+        <div class="description">
+          <div class="left-side">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="right-side">
+            <aside>
+              <h2>Paris : commencez à organiser !</h2>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créez un voyage</button>
+            </aside>
+            <div class="background-image"></div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2>Paris : les immanquables</h2>
+        <div class="interest">
+          <div>
+            <h3>Se divertir</h3>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a href="">Tout afficher</a>
+          </div>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
       </section>
     </main>
   </body>

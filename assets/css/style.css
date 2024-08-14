@@ -1,1 +1,194 @@
+/* Création de variable pour stocker des couleurs et les reutiliser plus facilement*/
+:root {
+  --dark-color: black;
+  --pink-color: #fe5d5d;
+  --white-color: white;
+}
 
+/* GLOBALS */
+body {
+  font-family: "TS-Reg", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 54px;
+  font-family: "TS-Med";
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+/*-------------------------------*/
+/* HEADER */
+/*-------------------------------*/
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+header img {
+  width: 190px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons-nav {
+  display: flex;
+}
+
+.icons-nav:not(:last-child) {
+  padding: 8px 10px;
+}
+.icons-nav i {
+  margin-right: 4px;
+}
+
+header button {
+  background-color: var(--dark-color);
+  border-radius: 20px;
+  color: white;
+  border: none;
+  width: 130px;
+  height: 40px;
+}
+
+/* ------------------------------------ */
+/* TOP-SECTION */
+/* ------------------------------------
+------------------------------------
+------------------------------------ */
+
+h1 span {
+  color: var(--pink-color);
+}
+
+h1 + p {
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.nav-top-pictures {
+  display: flex;
+  gap: 10px;
+  height: 65px;
+  margin-bottom: 20px;
+}
+
+.nav-top-pictures > div {
+  display: flex;
+  border: 1px solid;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 12px 15px;
+  flex: 1;
+}
+
+.nav-top-pictures div p,
+.nav-top-pictures i:last-child {
+  font-weight: bold;
+}
+
+.views {
+  display: flex;
+  height: 430px;
+  gap: 2px;
+}
+
+.views div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 2;
+}
+
+.views > div img {
+  height: calc(50% - 1px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.legend-pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend-pics p {
+  font-size: 12px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+/* ------------------------------------ */
+/* SECTION-DESCRIPTION */
+/* ------------------------------------
+------------------------------------
+------------------------------------ */
+
+.description {
+  display: flex;
+  gap: 120px;
+  margin-top: 20px;
+}
+
+.left-side h2 {
+  margin-bottom: 20px;
+}
+.description .left-side {
+  width: 90%;
+}
+aside {
+  background-color: var(--pink-color);
+  border-radius: 10px 10px 0 0;
+  padding: 5px 0 30px 25px;
+}
+
+aside p {
+  padding-top: 20px;
+}
+
+aside button {
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.background-image {
+  background-image: url("https://tripadvisor-lereacteur.netlify.app/assets/img/image_trips_card_medium.png");
+  height: 190px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 40px;
+}
+
+/* ------------------------------------ */
+/* SECTION-INTEREST */
+/* ------------------------------------
+------------------------------------
+------------------------------------ */
+
+.interest {
+  display: flex;
+}
