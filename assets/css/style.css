@@ -1,8 +1,9 @@
 /* Création de variable pour stocker des couleurs et les reutiliser plus facilement*/
 :root {
-  --dark-color: black;
-  --pink-color: #fe5d5d;
-  --white-color: white;
+  --dark: black;
+  --pink: #fe5d5d;
+  --white: white;
+  --green: #04aa6c;
 }
 
 /* GLOBALS */
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1024px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -67,17 +68,18 @@ header nav {
 
 .icons-nav {
   display: flex;
-}
-
-.icons-nav:not(:last-child) {
   padding: 8px 10px;
 }
+
+/*.icons-nav:not(:last-child) {
+  padding: 8px 10px;
+}*/
 .icons-nav i {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 header button {
-  background-color: var(--dark-color);
+  background-color: var(--dark);
   border-radius: 20px;
   color: white;
   border: none;
@@ -85,6 +87,15 @@ header button {
   height: 40px;
 }
 
+header button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.icons-nav:hover {
+  background-color: lightgrey;
+  border-radius: 20px;
+}
 /* ------------------------------------ */
 /* TOP-SECTION */
 /* ------------------------------------
@@ -92,7 +103,7 @@ header button {
 ------------------------------------ */
 
 h1 span {
-  color: var(--pink-color);
+  color: var(--pink);
 }
 
 h1 + p {
@@ -117,6 +128,11 @@ h1 + p {
   flex: 1;
 }
 
+.nav-top-pictures > div:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
 .nav-top-pictures div p,
 .nav-top-pictures i:last-child {
   font-weight: bold;
@@ -133,6 +149,11 @@ h1 + p {
   flex-direction: column;
   gap: 2px;
   flex: 2;
+}
+
+.views img:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .views > div img {
@@ -172,7 +193,7 @@ h1 + p {
   font-size: 20px;
 }
 aside {
-  background-color: var(--pink-color);
+  background-color: var(--pink);
   border-radius: 10px 10px 0 0;
   padding: 5px 0 30px 25px;
 }
@@ -182,13 +203,17 @@ aside p {
 }
 
 aside button {
-  background-color: var(--dark-color);
+  background-color: var(--dark);
   border-radius: 10px;
   color: white;
   border: none;
   width: 130px;
   height: 40px;
   margin-top: 20px;
+}
+
+aside button:hover {
+  opacity: 0.8;
 }
 
 .background-image {
@@ -209,22 +234,63 @@ aside button {
 
 .interest {
   display: flex;
+  margin-bottom: 50px;
 }
 
-.interest div p {
+.left-side-interest {
+  flex: 1;
+}
+
+.left-side-interest p {
   margin-bottom: 20px;
   font-size: 18px;
+  margin-right: 20px;
 }
 .carrousel {
   display: flex;
-  gap: 10px;
-  overflow: scroll;
+  gap: 15px;
+  overflow: hidden;
+  overflow-x: scroll;
+  flex: 3;
 }
 
-.carrousel-img-info {
+.carrousel-img {
+  position: relative;
+}
+
+.circle-heart {
+  position: absolute;
+  bottom: 146px;
+  left: 235px;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.circle-heart i {
+  color: var(--dark);
+}
+.review i {
+  color: var(--green);
+  font-size: 14px;
 }
 
 .carrousel-img-info img {
-  width: 230px;
+  height: 182px;
+  width: auto;
   object-fit: cover;
+}
+
+.carrousel-img-info:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.review {
+  margin: 5px 0;
+}
+
+.review span {
+  font-size: 13px;
+  margin-left: 10px;
 }
