@@ -4,6 +4,7 @@
   --pink: #fe5d5d;
   --white: white;
   --green: #04aa6c;
+  --beige: #faf1ed;
 }
 
 /* GLOBALS */
@@ -46,6 +47,7 @@ h5 {
   font-size: 18px;
   font-weight: 300;
 }
+
 /*-------------------------------*/
 /* HEADER */
 /*-------------------------------*/
@@ -252,6 +254,23 @@ aside button:hover {
   overflow: hidden;
   overflow-x: scroll;
   flex: 3;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel-item {
+  width: calc(33% - 10px);
+  flex-shrink: 0;
+}
+
+.carrousel-item .carrousel-img {
+  width: 100%;
 }
 
 .carrousel-img {
@@ -260,8 +279,8 @@ aside button:hover {
 
 .circle-heart {
   position: absolute;
-  bottom: 146px;
-  left: 235px;
+  bottom: 152px;
+  left: 220px;
   background-color: var(--white);
   padding: 10px;
   border-radius: 30px;
@@ -275,13 +294,21 @@ aside button:hover {
   font-size: 14px;
 }
 
-.carrousel-img-info img {
-  height: 182px;
-  width: auto;
+.carrousel-img img:first-child {
+  height: 190px;
+  width: 100%;
   object-fit: cover;
 }
 
-.carrousel-img-info:hover {
+.carrousel-img img:last-child {
+  position: absolute;
+  width: 30px;
+  right: 225px;
+  top: 146px;
+  border-radius: 15px 15px 0 0;
+}
+
+.carrousel-item:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -293,4 +320,30 @@ aside button:hover {
 .review span {
   font-size: 13px;
   margin-left: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--beige);
+  padding: 40px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div img {
+  width: 30px;
+}
+footer span {
+  margin-left: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
 }
