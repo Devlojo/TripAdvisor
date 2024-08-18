@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-header .hidden {
+.hidden {
   display: none;
 }
 
@@ -53,6 +53,70 @@ h5 {
   font-weight: bold;
 }
 
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.6);
+  border: 1px solid black;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form-container {
+  background-color: white;
+  padding: 60px 100px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: gray;
+}
+.close-button:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+
+form button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal h4 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px;
+}
+
+form button {
+  border: none;
+  background-color: #35e1a1;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--white);
+}
+
+.red {
+  color: red;
+}
 /*-------------------------------*/
 /* HEADER */
 /*-------------------------------*/
@@ -299,9 +363,6 @@ aside button:hover {
   border-radius: 30px;
 }
 
-.circle-heart i {
-  color: var(--dark);
-}
 .review i {
   color: var(--green);
   font-size: 14px;
